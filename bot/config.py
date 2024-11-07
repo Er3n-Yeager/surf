@@ -10,7 +10,7 @@ class Telegram:
     BOT_TOKEN = getenv("BOT_TOKEN", "7575485156:AAEiMwxf3LLL8DurCTlHVnnEmm6WxX_AP6Q")
     PORT = int(getenv("PORT", 8080))
     SESSION_STRING = getenv("SESSION_STRING", "")
-    BASE_URL = getenv("BASE_URL", "https://152.67.176.116").rstrip('/')
+    BASE_URL = getenv("BASE_URL", "https://https://equal-galliform-erenbots-f0a6a69a.koyeb.app").rstrip('/')
     DATABASE_URL = getenv("DATABASE_URL", "mongodb+srv://muthu2:muthu2@cluster0.u0sdu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     AUTH_CHANNEL = [channel.strip() for channel in getenv("AUTH_CHANNEL", " -1002422001370" ).split(",")]
     THEME = getenv("THEME", "quartz").lower()
