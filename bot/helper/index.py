@@ -28,9 +28,7 @@ async def get_messages(chat_id, first_message_id, last_message_id, batch_size=50
         for message in batch_messages:
             if message:
                 if file := message.video or message.document:
-                    title = message.caption 
-                    title, _ = splitext(title)
-                    title = re.sub(r'[.,|_\',]', ' ', title)
+                    title = message.caption
                     messages.append({"msg_id": message.id, "title": title,
                                      "hash": file.file_unique_id[:6], "size": get_readable_file_size(file.file_size),
                                      "type": file.mime_type, "chat_id": str(chat_id)})
