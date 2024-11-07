@@ -12,7 +12,7 @@ class Telegram:
     SESSION_STRING = getenv("SESSION_STRING", "")
     BASE_URL = getenv("BASE_URL", "https://https://equal-galliform-erenbots-f0a6a69a.koyeb.app")
     DATABASE_URL = getenv("DATABASE_URL", "mongodb+srv://muthu2:muthu2@cluster0.u0sdu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-    AUTH_CHANNEL = [channel.strip() for channel in getenv("AUTH_CHANNEL", " -1002422001370" ).split(",")]
+    AUTH_CHANNEL = [channel.strip() for channel in getenv("AUTH_CHANNEL", " -1002260378612" ).split(",")]
     THEME = getenv("THEME", "quartz").lower()
     USERNAME = getenv("USERNAME", "admin")
     PASSWORD = getenv("PASSWORD", "admin")
