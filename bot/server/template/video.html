@@ -145,7 +145,7 @@
     const hashParam = new URLSearchParams(window.location.search).get('hash');
     const encodedName = encodeURIComponent('<!-- Filename -->');
 
-    const downloadlink = `${domainUrl}/${videoId}/download?id=${idParam}&hash=${hashParam}`;
+    const downloadlink = `${domainUrl}/${videoId}/$download?id=${idParam}&hash=${hashParam}`;
 
     const player = new Plyr('#player', {
         controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen', 'pip', 'airplay', 'settings', "play-large", 'duration'],
