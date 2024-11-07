@@ -7,7 +7,7 @@ load_dotenv("config.env")
 class Telegram:
     API_ID = int(getenv("API_ID", "12862156"))
     API_HASH = getenv("API_HASH", "d913a2ef10183c683144ff851481d9fd")
-    BOT_TOKEN = getenv("BOT_TOKEN", "")
+    BOT_TOKEN = getenv("BOT_TOKEN", "7575485156:AAEiMwxf3LLL8DurCTlHVnnEmm6WxX_AP6Q")
     PORT = int(getenv("PORT", 8080))
     SESSION_STRING = getenv("SESSION_STRING", "")
     BASE_URL = getenv("BASE_URL", "https://152.67.176.116").rstrip('/')
