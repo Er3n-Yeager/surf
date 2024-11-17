@@ -46,7 +46,7 @@ async def get_files(chat_id, page=1):
         file = post.video or post.document
         if not file:
             continue
-        title = file.file_name or post.caption or file.file_id
+        title = post.caption 
         title, _ = splitext(title)
         title = re.sub(r'[.,|_\',]', ' ', title)
         posts.append({"msg_id": post.id, "title": title,
